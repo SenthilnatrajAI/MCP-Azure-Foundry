@@ -6,6 +6,9 @@ import logging
 app = func.FunctionApp()
 
 def get_blob_service_client():
+    from azure.storage.blob import BlobServiceClient
+    connection_string = "DefaultEndpointsProtocol=https;AccountName=azurefoundrymcp;
+    
     
 @app.mcp_tool()
 @app.mcp_tool_property(arg_name="name", description="Name of the user")
